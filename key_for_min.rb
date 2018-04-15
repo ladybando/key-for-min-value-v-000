@@ -5,7 +5,7 @@ require 'pry'
 def key_for_min_value(name_hash)
 
   name_hash.collect do |name, amount|
-    amount.each do |a,b|
+    amount do |a,b|
       a <=> b
       if amount[0] < amount[1] && amount[2]
         puts name
