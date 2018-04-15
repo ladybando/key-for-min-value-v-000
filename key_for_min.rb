@@ -2,17 +2,14 @@
 # Given a hash with numeric values, return the key for the smallest value
 require 'pry'
 
-def key_for_min_value(name_hash)
-
-  name_hash.collect do |name, amount|
-    amount do |a,b|
-      a <=> b
-      if amount[0] < amount[1] && amount[2]
-        puts name
-      elsif name_hash.empty?
-        puts nil
-      #binding.pry
-      end
+def key_for_min_value(hash)
+  lowest_key = nil
+  lowest_value = Float::INFINITY
+  hash.each do |k, v|
+    if v < lowest_value
+      lowest_value = v
+      lowest_key = k
     end
   end
+  lowest_key
 end
