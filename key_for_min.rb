@@ -12,7 +12,7 @@ def key_for_min_value(name_hash)
       elsif name_hash.empty?
         puts nil
       #binding.pry
+      end
     end
-  end
   end
 end
