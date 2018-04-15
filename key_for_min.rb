@@ -5,10 +5,10 @@ require 'pry'
 def key_for_min_value(name_hash)
   name = nil
   lowest_amount = Float::INFINITY
-  hash.each do |k, v|
+  hash.each do |n, v|
     if v < lowest_amount
       lowest_amount = v
-      lowest_key = k
+      name = n
     end
   end
   lowest_key
