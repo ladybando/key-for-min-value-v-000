@@ -3,13 +3,11 @@
 require 'pry'
 
 def key_for_min_value(name_hash)
-  i, j = 0,0
-  a_value = a
+  value.each do |a,b|
+    a <=> b
   name_hash.collect do |name, value|
-    wile value > 0
-    i = value - 1
-    a_value = value[0]
-      puts name
+     
+       puts name
     elsif name_hash.empty?
       puts nil
       #binding.pry
