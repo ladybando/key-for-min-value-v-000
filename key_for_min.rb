@@ -3,6 +3,8 @@
 require 'pry'
 
 def key_for_min_value(name_hash)
+  i, j = 0,0
+  a_value = a
   name_hash.collect do |name, value|
     wile value > 0
     i = value - 1
